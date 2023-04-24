@@ -1,0 +1,473 @@
+html, body{
+    
+   
+    
+    background-color: #3C3744;
+    color: white;
+    font-family: Monospace, "Courier New", "Times New Roman";
+}
+
+
+header{
+    text-align: center;
+    background-color: #b4c5e4;
+    color: black;
+  
+    
+}
+p{
+    font-size: large;
+}
+header h1{
+    padding-top: 1%;
+    font-family: Cinzel, Monospace, "Courier New" ;
+    margin-bottom: 0;
+}
+header p{
+    padding-bottom: 1%;
+    margin-top: 0;
+}
+
+nav{
+    background-color: #3C3744;
+    padding: 0.5%;
+}
+
+h2, h3{
+    font-family: Cinzel, Monospace, "Courier New" ;
+}
+
+nav ul {
+
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size:large;
+    font-family: Cinzel, Monospace, "Courier New" ;
+    font-weight: bolder;
+}
+
+.About{
+    
+   text-align: center;
+   padding-bottom: 1%;
+}
+
+#tpt, #cycles, #WordPress, #PleasureIsland, #Tyrell, #Resume{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    width: 70%;
+    display: block;
+   
+}
+
+.About p, .StoreDis , .ViciousCyclesDis, .WordPressDis, .PleasureIslandDis, .TyrellDis, .ResumeDis, .WorkExperience {
+    text-align: center;
+    padding-left: 2%;
+    padding-right:2%;
+    margin-bottom: 5%;
+}
+
+#TyrellLink {
+    color: #b4c5e4;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+address{
+    padding-bottom: 5%;
+}
+
+
+
+
+footer{
+
+    background-color: #090c9b;
+    color: white;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    text-align: center;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  
+}
+
+@media screen and (max-width:700px) {
+
+  
+
+        #menuToggle
+        {
+          display: block;
+          position: relative;
+          top: 20%;
+          left: 5%;
+          z-index: 1;
+          -webkit-user-select: none;
+          user-select: none;
+          width: 
+          
+        }
+
+        #menuToggle a
+        {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+        font-size: larger;
+        }
+
+        #menuToggle a:hover
+            {
+            color:white;
+            
+            }
+
+            #menuToggle input
+            {
+              display: block;
+              width: 50%;
+              height: 100%;
+              position: absolute;
+              top: -7px;
+              left: -5px;
+              
+              cursor: pointer;
+              
+              opacity: 0; 
+              z-index: 2; 
+              
+              -webkit-touch-callout: none;
+            }
+
+            #menuToggle span
+                {
+                display: block;
+                width: 33px;
+                height: 4px;
+                margin-bottom: 5px;
+                position: relative;
+                
+                background:#b4c5e4;
+                border-radius: 3px;
+                
+                z-index: 1;
+                
+                transform-origin: 4px 0px;
+                
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            opacity 0.55s ease;
+                }
+
+                #menuToggle span:first-child
+                {
+                transform-origin: 0% 0%;
+                }
+
+                #menuToggle span:nth-last-child(2)
+                {
+                transform-origin: 0% 100%;
+                }
+
+                
+                #menuToggle input:checked ~ span
+                {
+                opacity: 1;
+                transform: rotate(45deg) translate(-2px, -1px);
+                background: #232323;
+                }
+
+                
+                #menuToggle input:checked ~ span:nth-last-child(3)
+                {
+                opacity: 0;
+                transform: rotate(0deg) scale(0.2, 0.2);
+                }
+
+                
+                #menuToggle input:checked ~ span:nth-last-child(2)
+                {
+                transform: rotate(-45deg) translate(0, -1px);
+                }
+
+              
+                #menu
+                {
+                position: absolute;
+                width: 300px;
+                margin: -100px 0 0 -50px;
+                padding: 50px;
+                padding-top: 125px;
+                
+                background: #b4c5e4;;
+                list-style-type: none;
+                -webkit-font-smoothing: antialiased;
+             
+                
+                transform-origin: 0% 0%;
+                transform: translate(-100%, 0);
+                
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+                }
+
+                #menu li
+                {
+                padding: 10px 0;
+                font-size: 22px;
+                }
+
+             
+                #menuToggle input:checked ~ ul
+                {
+                transform: none;
+                }
+                }
+
+                #me{  
+        
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 5%;
+                    width: 60%;
+                    display: block;
+                    margin-bottom: 5%;
+                    border-top: solid #b4c5e4;
+                }
+
+                .contactForm{
+                    padding-left: 1%;
+                }
+
+                .contactForm input{
+                    width: 95%;
+                }
+
+                .contactForm h2{
+                    text-align: center;
+            
+               
+                }
+                
+                .contactForm p {
+                    text-align: center ;
+                }
+                
+                .contactForm label{
+                    font-family: Cinzel, Monospace, "Courier New" ;
+                    padding-bottom: 10%;
+                    
+                    font-size: larger;
+                }
+            
+                .contactForm button{
+                    font-family: Cinzel, Monospace, "Courier New" ;
+                   font-weight: bolder;
+                    font-size: larger;
+                    background-color: #b4c5e4;
+                    margin-bottom: 5%;
+                }
+
+                
+@media  screen and (min-width: 701px ) {
+
+    .container{
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+    }
+
+    header{
+        grid-column-start: 1;
+  grid-column-end: 4;
+    }
+
+    nav{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;S
+        
+    }
+
+    nav input{
+        display: none;
+    }
+
+    .About, .WorkExperience{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        
+    }
+    
+    .Store, .job-details{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-top: solid #b4c5e4;
+        
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    .StoreDis{
+        
+            grid-column-start: 2;
+            grid-column-end: 3;
+            
+    
+    
+    }
+
+    .ViciousCycles, .job-summary{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    .ViciousCyclesDis{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .WordPress{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    .WordPressDis{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    #WordPress{
+        width: 30%;
+    }
+
+    .PleasureIsland{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    .PleasureIslandDis{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .Tyrell{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    .TyrellDis{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .Resume{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 7;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+    .ResumeDis{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .me{
+        grid-column-start: 2;
+        grid-column-end: 4;}
+
+    #me{  
+        
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        width: 30%;
+        display: block;
+        margin-bottom: 5%;
+        border-top: solid #b4c5e4;
+    }
+
+    .contactForm{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        margin-bottom: 5%;
+        padding-top: 2%;
+    }
+
+    .contactForm h2{
+        text-align: center;
+
+   
+    }
+    
+    .contactForm p {
+        text-align: center ;
+    }
+    
+    .contactForm label{
+        font-family: Cinzel, Monospace, "Courier New" ;
+        padding-bottom: 10%;
+        
+        font-size: larger;
+    }
+
+    .contactForm button{
+        font-family: Cinzel, Monospace, "Courier New" ;
+       font-weight: bolder;
+        font-size: larger;
+        background-color: #b4c5e4;
+    }
+
+    .job-details2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+
+    }
+
+    .job-summary2{
+ grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        border-top: solid #b4c5e4;
+        padding: 2%;
+        margin-right: 5%;
+    }
+
+
+    footer{
+       
+  
+
+    }
+    
+}
